@@ -4,6 +4,7 @@ import './App.css';
 
 function App() {
 	const options = ['Rock', 'Paper', 'Scissors'];
+
 	const [playerOption, setPlayerOption] = useState();
 	const [computerOption, setComputerOption] = useState();
 	const [playerScore, setPlayerScore] = useState(0);
@@ -53,8 +54,8 @@ function App() {
 
 	return (
 		<>
-			<main>
-				<section className='wrapper'>
+			<main className='centered'>
+				<section className='wrapper score'>
 					<h2>Player: {playerScore}</h2>
 					<h2>Computer: {computerScore}</h2>
 				</section>
@@ -69,11 +70,11 @@ function App() {
 						<FaHandScissors className='option' />
 					</div>
 				</section>
-				<section className='wrapper'>
+				<section className='wrapper message'>
 					{message ? (
-						<h2>{message}</h2>
+						<h1>{message}</h1>
 					) : (
-						<h2>Select one of the above to start game!</h2>
+						<h1>Select one of the above to start game!</h1>
 					)}
 				</section>
 			</main>

@@ -14,8 +14,13 @@ body {
 }
 
 .wrapper {
+	margin-top: 30px;
 	display: flex;
 	justify-content: space-around;
+}
+
+.score {
+	font-size: 22px;
 }
 
 .options {
@@ -26,9 +31,62 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	cursor: pointer;
 }
 
 .option {
 	color: #323232;
 	font-size: 45px;
+}
+
+.message {
+	font-size: 22px;
+}
+
+@media only screen and (max-width: 920px) {
+	.score {
+		font-size: 18px;
+	}
+	.options {
+		height: 150px;
+		width: 150px;
+		border-radius: 150px;
+	}
+	.message {
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width: 760px) {
+	body {
+		width: 80%;
+	}
+	.score {
+		font-size: 15px;
+	}
+	.options {
+		height: 120px;
+		width: 120px;
+		border-radius: 150px;
+	}
+	.message {
+		font-size: 15px;
+	}
+}
+
+@media only screen and (max-width: 540px) {
+	body {
+		width: 100%;
+	}
+	.score {
+		font-size: 15px;
+	}
+	.options {
+		height: 120px;
+		width: 120px;
+		border-radius: 150px;
+	}
+	.message {
+		font-size: 13px;
+	}
 }
